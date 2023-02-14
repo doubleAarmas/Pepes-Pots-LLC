@@ -155,7 +155,7 @@ body {
 
 #hero button{
     /* issues with sizing the button due to background. ask if he would like to remove it */
-    background-image: url(/Public/images/button-background.png);
+    background-image: url(../images/button-background.png);
     background-color: transparent;
     color: #088178;
     border: 0;
@@ -310,7 +310,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url(/Public/images/My\ project-1\ \(1\).png);
+    background-image: url(../images/banner-background.png);
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -343,7 +343,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-image: url(/Public/images/Newsletter-background-plain.png);
+    background-image: url(../images/Newsletter-background-plain.png);
     background-repeat: no-repeat;
     background-position: 20% 30%;
     background-color: #041e42;
