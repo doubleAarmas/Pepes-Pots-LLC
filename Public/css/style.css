@@ -44,20 +44,6 @@ padding: 40px 80px;
     margin: 40px 0;
 }
 
-/* only affecting the button in the banner not the carts*/
-button.normal {
-    font-size: 14px;
-    font-weight: 600;
-    padding: 15px 30px;
-    color: #000;
-    background-color: #fff;
-    border-radius: 22px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    transition: 0.2s;
-}
-
 body {
     width: 100%;
 }
@@ -287,7 +273,7 @@ body {
     color: #088178;
 }
 
-#product1 .product button {
+/* #product1 .product button {
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -299,8 +285,21 @@ body {
     position: absolute;
     bottom: 20px;
     right: 10px;
-}
+} */
 
+#product1 .product .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 600;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
 /* Banner section specifics */
 
 
@@ -431,7 +430,7 @@ footer .follow{
     margin-top: 20px;
 }
 
-footer .follow .icon a{
+footer .follow i {
     color: #465b52;
     padding-right: 10px;
     cursor: pointer;
@@ -443,7 +442,7 @@ footer .row img {
     margin: 10px 0 15px 0;
 }
 
-footer .follow .icon:hover,
+footer .follow i:hover,
 footer a:hover {
     color: #088178;
 }
@@ -452,6 +451,150 @@ footer .copyright {
     width: 100%;
     text-align: center;
 }
+
+#close{
+    display: none;
+}
+
+
+/* Shop page content */
+
+#page-header {
+background-image: url(/Public/images/shop-banner-small.png);
+width: 100%;
+height: 40vh;
+background-size: cover;
+display: flex;
+justify-content: center;
+text-align: center;
+flex-direction: column;
+padding: 14px;
+}
+
+#page-header h2,
+#page-header p {
+color: #088178;
+}
+
+#pagination {
+    text-align: center;
+   
+
+}
+/* buttons for going to different pages */
+#pagination a {
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Single product details page */
+#product-details {
+    display: flex;
+    margin-top: 20px;
+}
+
+#product-details .single-product-image{
+    width: 20%;
+    margin-right: 50px;
+}
+
+.small-image-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.small-image-column {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#product-details .single-product-details {
+    width: 50%;
+    padding-top: 30px;
+}
+
+#product-details .single-product-details h4 {
+    padding: 40px 0 20px 0;
+}
+
+
+#product-details .single-product-details h2 {
+    font-size: 26px;
+}
+
+#product-details .single-product-details select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#product-details .single-product-details input {
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#product-details .single-product-details input:focus {
+    outline: none;
+}
+
+/* actual product add to cart button */
+
+#product-details .single-product-details .normal {
+    background-color: #088178;
+    color: #fff;
+    border-radius: 4px;
+    padding: 12px 15px;
+}
+
+
+#product-details .single-product-details span {
+    line-height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width:799px) {
 
@@ -484,9 +627,10 @@ footer .copyright {
         display: flex;
         align-items: center;
     }
-    #mobile img{
+    #mobile i{
         font-size: 24px;
         padding-left: 20px;
+        color: #1a1a1a;
     }
 
     #close{
@@ -498,7 +642,7 @@ footer .copyright {
         font-size: 24px;
     }
 
-    .cart{
+    #lg-basket{
         display: none;
     }
 
@@ -584,5 +728,20 @@ footer .copyright {
         width: 100%;
         }
 
-       
+    /* Single product details*/
+        #product-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #product-details .single-product-image {
+            width: 100%;
+            margin-right: 0px;
+        }
+
+        #product-details .single-product-details {
+            width: 100%;
+        }
+
+     
 }
